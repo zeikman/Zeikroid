@@ -347,7 +347,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
             try {
                 // Simulate network access.
-                Thread.sleep(2000);
+                Thread.sleep(200);
             } catch (InterruptedException e) {
                 return false;
             }
@@ -371,9 +371,9 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             showProgressOverlay(false);
 
             if (success) {
-                /*finish();*/
                 Intent intent = new Intent("com.zeikman.zeikroid.SCROLLINGACTIVITY");
                 startActivity(intent);
+                finish();
             } else {
                 mPasswordView.setError(getString(R.string.error_incorrect_password));
                 mPasswordView.requestFocus();

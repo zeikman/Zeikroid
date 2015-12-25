@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:key="my_name"
+        android:summary="Enter My Name"
+        android:title="My Name" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="my_checkbox"
+        android:summary="Should be checked"
+        android:title="My CheckBox" />
+
+    <ListPreference
+        android:defaultValue="3"
+        android:entries="@array/my_list_titles"
+        android:entryValues="@array/my_list_values"
+        android:key="my_list"
+        android:summary="Just choose one"
+        android:title="My List" />
+
+</PreferenceScreen>
