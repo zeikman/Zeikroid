@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="the_photo" type="id">the_photo</item>
+    <item name="the_title" type="id">the_title</item>
+</resources>
